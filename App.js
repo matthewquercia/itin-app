@@ -6,7 +6,7 @@ import Sample from './src/screens/Sample';
 
 const Stack = createStackNavigator();
 
-function ItinStack(){
+function ItinApplicationStack(){
   return (
     <Stack.Navigator>
       <Stack.Screen name="Sample" component={Sample} />
@@ -17,7 +17,7 @@ function ItinStack(){
 export default function App() {
   return (
     <NavigationContainer>
-      <ItinStack />
+      <ItinApplicationStack />
     </NavigationContainer>
   );
 }

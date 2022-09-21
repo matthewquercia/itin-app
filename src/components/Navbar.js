@@ -8,9 +8,9 @@ import { Entypo } from '@expo/vector-icons';
 const Navbar = () => {
     return (
         <View style={styles.navbarContainer}>
-            <Ionicons name="home" size={24} color="black" style={{marginLeft: 5, marginRight: 5}}/>
-            <Entypo name="squared-plus" size={24} color="black" style={{marginLeft: 5, marginRight: 5}}/>
-            <FontAwesome name="user" size={24} color="black" style={{marginLeft: 5, marginRight: 5}}/>
+            <Ionicons name="home" size={24} color="black" style={styles.iconMargin}/>
+            <Entypo name="squared-plus" size={24} color="black" style={styles.iconMargin}/>
+            <FontAwesome name="user" size={24} color="black" style={styles.iconMargin}/>
         </View>
     )
 };
@@ -18,14 +18,18 @@ const Navbar = () => {
 const styles = StyleSheet.create({
     navbarContainer: {
         marginBottom: 20,
-        paddingTop: 5,
-        width: 300,
+        width: 200,
         height: 40,
         justifyContent: 'center',
+        alignItems: 'center',
         borderColor: 'black',
         borderWidth: 0.5,
         borderRadius: 10,
         flexDirection: 'row'
+    },
+    iconMargin: {
+        marginLeft: 5,
+        marginRight: 5
     }
 });
 
